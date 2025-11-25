@@ -243,17 +243,18 @@ if run:
         if idx is not None:
     st.success(f"Nodo trovato: **{atlas.iloc[idx].roi_name}**")
 
-    # Degree
-    if "degree" in atlas.columns:
-        st.write("📌 Degree:", int(atlas.iloc[idx]["degree"]))
-    else:
-        st.write("📌 Degree: (non disponibile)")
+            # Degree
+            if "degree" in atlas.columns:
+                st.write("📌 Degree:", int(atlas.iloc[idx]["degree"]))
+            else:
+            st.write("📌 Degree: (non disponibile)")
 
-    # ROI ID
-    if "roi_id" in atlas.columns:
-        st.write("📌 ID:", atlas.iloc[idx]["roi_id"])
-    else:
-        st.write("📌 ID: (non disponibile)")
+            # ROI ID
+            if "roi_id" in atlas.columns:
+                st.write("📌 ID:", atlas.iloc[idx]["roi_id"])
+            else:
+                st.write("📌 ID: (non disponibile)")
+
 
 else:
     st.info("⬅️ Carica i dati nella sidebar e premi *Generate Connectome*.")
