@@ -256,10 +256,7 @@ if run:
             else:
                 st.write("📌 ID: (non disponibile)")
 
-else:
-    st.info("⬅️ Carica i dati nella sidebar e premi *Generate Connectome*.")
-
-
-
+        else:
+            st.info("⬅️ Carica i dati nella sidebar e premi *Generate Connectome*.")
 else:
     st.info("⬅️ Carica i dati nella sidebar e premi *Generate Connectome*.")
