@@ -242,7 +242,8 @@ if run:
 
         if idx is not None:
             st.success(f"Nodo trovato: **{atlas.iloc[idx].roi_name}**")
-            st.write("📌 Degree:", atlas.iloc[idx].degree)
-            st.write("📌 ID:", atlas.iloc[idx].roi_id)
+            st.write("📌 Degree:", atlas.iloc[idx]["degree"])
+            st.write("📌 ID:", atlas.iloc[idx]["roi_id"])
+
 else:
     st.info("⬅️ Carica i dati nella sidebar e premi *Generate Connectome*.")
